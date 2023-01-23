@@ -15,7 +15,9 @@ The EcoSwell Multi-Sensor is easy to use and can measure up to eight different d
 
 *see section **Data Type Details** for more details
 
+## **Disclaimers**
 
+Whenever you want to make a change or cancel a sensor reading, it is better to log into the ssh and manually use the command "sudo reboot" instead of unplugging the USB C cable.
 
 ## **Overview** 
 
