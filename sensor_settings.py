@@ -27,7 +27,7 @@ Modify the values inside the brackets below for each active sensor with the foll
 i.e. to measure temperature and ammonia with a time delay between readings of 60 and 120 secs 
 and a data recording duration of 4 hours and 7 hours respectively, you should write [(1,60,240), (7,120,420)]
 '''
-sensors = [(1,5,1), (2,5,1), (3,5,1), (4,5,1), (5,5,1), (6,5,1), (7,5,1), (8,5,1)]
+sensors = [(1,10,2), (2,10,2), (3,10,2), (4,10,2), (5,10,2), (6,10,2), (7,10,2), (8,10,2)]
 
 
 
