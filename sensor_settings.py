@@ -5,7 +5,7 @@ EMAIL ADDRESS
 
 Enter the email address to which the files storing the data readings should be sent:
 '''
-email_address = 'sofiachristinaromero@gmail.com'
+email_address = 'hugo.fernandez@ecoswell.org'
 
 
 '''
