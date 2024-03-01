@@ -27,7 +27,7 @@ Modify the values inside the brackets below for each active sensor with the foll
 i.e. to measure temperature and ammonia with a time delay between readings of 60 and 120 secs 
 and a data recording duration of 4 hours and 7 hours respectively, you should write [(1,60,240), (7,120,420)]
 '''
-sensors = [(1,60,10), (5,60,10), (6,60,10), (7,60,10)]
+sensors = [(1,60,70), (2,60,70), (2,60,70), (3,60,70), (4,60,70), (5,60,70), (6,60,70), (7,60,70), (8,60,70)]
 
 
 
@@ -51,7 +51,7 @@ To obtain gas readings in ppm, you must first calibrate the sensors by taking re
 To calibrate the gas sensors, set 'calculate_gas_factor' to True and follow the instructions in the documentation (README.md).
 Note: if you want to calculate the gas calibration factor, 'calculate_temp_factor' must be set to False.
 '''
-calculate_gas_factor = True
+calculate_gas_factor = False
 
 """
 TECHNICAL INFORMATION
