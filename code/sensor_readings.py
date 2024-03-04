@@ -63,7 +63,7 @@ class SensorReadings(): # class containing methods to take sensor readings
         for i in range(10): 
             sensor = 'calculate_temp_factor'
             freq = 60
-            dur = 60
+            dur = 15
             raw_temp = bme280.get_temperature() # get raw reading of temp
             cpu_temp = self.get_cpu_temperature() # get current CPU temperature
             self.cpu_temps = self.cpu_temps[1:] + [cpu_temp] # remove oldest reading of CPU temp and append latest reading of CPU temp to 'cpu_temps'
