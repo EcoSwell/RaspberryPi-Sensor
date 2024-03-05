@@ -27,7 +27,7 @@ Modify the values inside the brackets below for each active sensor with the foll
 i.e. to measure temperature and ammonia with a time delay between readings of 60 and 120 secs 
 and a data recording duration of 4 hours and 7 hours respectively, you should write [(1,60,240), (7,120,420)]
 '''
-sensors = [(1,60,60), (2,60,60), (2,60,60), (3,60,60), (4,60,60), (5,60,60), (6,60,60), (7,60,60), (8,60,60)]
+sensors = [(1,60,70), (2,60,70), (2,60,70), (3,70,70), (4,60,70), (5,60,70), (6,60,70), (7,60,70), (8,60,70)]
 
 
 
@@ -39,9 +39,9 @@ To determine the factor required to correctly compensate the tenmperature readin
 set 'calculate_temp_factor' to True and follow the instructions in the documentation (README.md).
 Note: if you want to calculate the temperature tuning factor, 'calculate_gas_factor' must be set to False.
 '''
-calculate_temp_factor = True
+calculate_temp_factor = False
 
-factor = 4.73
+factor = 1.31
 
 
 '''
