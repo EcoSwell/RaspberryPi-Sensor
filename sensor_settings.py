@@ -41,7 +41,7 @@ Note: if you want to calculate the temperature tuning factor, 'calculate_gas_fac
 '''
 calculate_temp_factor = False
 
-factor = 1.31
+factor = 1.29
 
 
 '''
