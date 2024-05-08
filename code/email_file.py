@@ -21,7 +21,7 @@ TIME = NOW.strftime("%H:%M:%S") # get time when sensor readings begin in correc
 SMTP_SERVER = 'smtp.gmail.com' # email server 
 SMTP_PORT = 587 # server port 
 GMAIL_USERNAME = 'riccardobianco2001@gmail.com' # change this to match your gmail account
-GMAIL_PASSWORD = 'blla qslj jnzo bjep' # change this to match your gmail app-password (see https://bc-robotics.com/tutorials/sending-email-using-python-raspberry-pi/)
+GMAIL_PASSWORD = 'pkeq lhxf kewm fmpp' # change this to match your gmail app-password (see https://bc-robotics.com/tutorials/sending-email-using-python-raspberry-pi/)
 RECIPIENT = sensor_settings.email_address
 SUBJECT = 'Multi-sensor data '+DATE+'-'+TIME
 
