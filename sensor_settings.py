@@ -45,7 +45,7 @@ factor = 1.29
 
 
 '''
-GAS CALIBRATION
+GAS CALIBRATION 
 
 To obtain gas readings in ppm, you must first calibrate the sensors by taking readings of gas concentration in an open space away from buildings (e.g. a field).
 To calibrate the gas sensors, set 'calculate_gas_factor' to True and follow the instructions in the documentation (README.md).
