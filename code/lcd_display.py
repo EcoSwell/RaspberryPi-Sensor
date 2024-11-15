@@ -1,12 +1,12 @@
 '''Display status/error messages on sensor LCD screen'''
 
 import time
-import ST7735
+import st7735
 from PIL import Image, ImageDraw, ImageFont
 from fonts.ttf import RobotoMedium as UserFont
 
 # create LCD class instance:
-display = sT7735.ST7735(
+display = st7735.st7735(
     port=0,
     cs=1,
     dc=9,
