@@ -1,7 +1,7 @@
 '''Display status/error messages on sensor LCD screen'''
 
 import time
-import ST7735
+import st7735
 from PIL import Image, ImageDraw, ImageFont
 from fonts.ttf import RobotoMedium as UserFont
 
