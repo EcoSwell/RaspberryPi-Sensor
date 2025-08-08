@@ -20,8 +20,8 @@ DATE = NOW.strftime("%d.%m.%Y") # get date when sensor readings begin in correct
 TIME = NOW.strftime("%H:%M:%S") # get time when sensor readings begin in correct format
 SMTP_SERVER = 'smtp-mail.outlook.com' # email server 
 SMTP_PORT = 587 # server port 
-EMAIL_USERNAME = 'ecoswellbot@outlook.com' # change this to match your gmail account
-EMAIL_PASSWORD = 'uevsyybzeiccfhly' # change this to match your gmail app-password (see https://bc-robotics.com/tutorials/sending-email-using-python-raspberry-pi/)
+EMAIL_USERNAME = 'ecoswellbot@outlook.com' # change this to match your email account
+EMAIL_PASSWORD = 'uevsyybzeiccfhly' # change this to match your email app-password (see https://support.microsoft.com/en-us/account-billing/how-to-get-and-use-app-passwords-5896ed9b-4263-e681-128a-a6f2979a7944)
 RECIPIENT = sensor_settings.email_address
 SUBJECT = 'Multi-sensor data '+DATE+'-'+TIME
 
