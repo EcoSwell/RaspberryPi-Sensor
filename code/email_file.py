@@ -18,10 +18,10 @@ import time
 NOW = datetime.now() # get current date and time
 DATE = NOW.strftime("%d.%m.%Y") # get date when sensor readings begin in correct format
 TIME = NOW.strftime("%H:%M:%S") # get time when sensor readings begin in correct format
-SMTP_SERVER = 'smtp.gmail.com' # email server 
+SMTP_SERVER = 'smtp-mail.outlook.com' # email server 
 SMTP_PORT = 587 # server port 
-GMAIL_USERNAME = 'ecoswellbot@outlook.com' # change this to match your gmail account
-GMAIL_PASSWORD = 'uevsyybzeiccfhly' # change this to match your gmail app-password (see https://bc-robotics.com/tutorials/sending-email-using-python-raspberry-pi/)
+EMAIL_USERNAME = 'ecoswellbot@outlook.com' # change this to match your gmail account
+EMAIL_PASSWORD = 'uevsyybzeiccfhly' # change this to match your gmail app-password (see https://bc-robotics.com/tutorials/sending-email-using-python-raspberry-pi/)
 RECIPIENT = sensor_settings.email_address
 SUBJECT = 'Multi-sensor data '+DATE+'-'+TIME
 
@@ -29,14 +29,14 @@ while True: # continually try to send email
     time.sleep(10) # delay to allow Raspberry Pi to connect to internet
 
     try:
-        # connect to gmail server:
+        # connect to email server:
         session = smtplib.SMTP(SMTP_SERVER, SMTP_PORT) 
         session.ehlo()
         session.starttls()
         session.ehlo()
 
-        # login to gmail
-        session.login(GMAIL_USERNAME, GMAIL_PASSWORD)
+        # login to email
+        session.login(EMAIL_USERNAME, EMAIL_PASSWORD)
 
         msg = MIMEMultipart() # create message data
         msg['Subject'] = SUBJECT # assign message subject 
@@ -53,7 +53,7 @@ while True: # continually try to send email
 
         if count != 0: # if zero files in data folder:
             # send email:
-            session.sendmail(GMAIL_USERNAME, RECIPIENT, msg.as_string()) # send email to desired email address
+            session.sendmail(EMAIL_USERNAME, RECIPIENT, msg.as_string()) # send email to desired email address
             session.quit
 
             # move each emailed file to directory storing emails which have already been emailed 
